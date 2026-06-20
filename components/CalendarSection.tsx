@@ -19,20 +19,40 @@ interface Appointment {
 }
 
 const appointments: Appointment[] = [
-  { day: 0, start: 9,    duration: 1,   title: 'Buyer Showing',       sub: '2450 Oak St',         type: 'showing',  cadence: true  },
-  { day: 0, start: 14,   duration: 1.5, title: 'Listing Consult',     sub: 'Maple Ave',            type: 'listing',  cadence: false },
-  { day: 1, start: 9.5,  duration: 1,   title: 'Buyer Consult',       sub: 'Pre-approval review',  type: 'consult',  cadence: true  },
-  { day: 1, start: 13,   duration: 1,   title: 'Showing',             sub: '4bd Lake View',        type: 'showing',  cadence: true  },
-  { day: 1, start: 15.5, duration: 0.5, title: 'Follow-up Call',      sub: 'Qualified lead',       type: 'consult',  cadence: true  },
-  { day: 2, start: 9,    duration: 0.5, title: 'Lead Booked',         sub: 'Zillow inquiry',       type: 'consult',  cadence: true  },
-  { day: 2, start: 10.5, duration: 1,   title: 'Showing',             sub: 'Downtown Loft',        type: 'showing',  cadence: true  },
-  { day: 2, start: 14,   duration: 1,   title: 'Team Meeting',        sub: 'Weekly sync',          type: 'internal', cadence: false },
-  { day: 3, start: 9,    duration: 1.5, title: 'Listing Presentation',sub: 'Edina, MN',            type: 'listing',  cadence: false },
-  { day: 3, start: 13.5, duration: 1,   title: 'Buyer Showing',       sub: '3bd Summit Ave',       type: 'showing',  cadence: true  },
-  { day: 3, start: 15.5, duration: 0.5, title: 'Lead Call',           sub: 'Facebook inquiry',     type: 'consult',  cadence: true  },
-  { day: 4, start: 10,   duration: 1,   title: 'Buyer Consult',       sub: 'Relocation buyer',     type: 'consult',  cadence: true  },
-  { day: 4, start: 13,   duration: 0.5, title: 'Lead Call',           sub: 'Realtor.com',          type: 'consult',  cadence: true  },
-  { day: 4, start: 15,   duration: 1,   title: 'Showing',             sub: 'Wayzata Home',         type: 'showing',  cadence: true  },
+  // Monday
+  { day: 0, start: 8.5,  duration: 0.5, title: 'Lead Call',            sub: 'Overnight inquiry',    type: 'consult',  cadence: true  },
+  { day: 0, start: 9,    duration: 1,   title: 'Buyer Showing',        sub: '2450 Oak St',          type: 'showing',  cadence: true  },
+  { day: 0, start: 10.5, duration: 0.5, title: 'Lead Call',            sub: 'Zillow — pre-approved',type: 'consult',  cadence: true  },
+  { day: 0, start: 11.5, duration: 1,   title: 'Buyer Showing',        sub: 'Kenwood Condo',        type: 'showing',  cadence: true  },
+  { day: 0, start: 14,   duration: 1.5, title: 'Listing Consult',      sub: 'Maple Ave',            type: 'listing',  cadence: false },
+  // Tuesday
+  { day: 1, start: 8,    duration: 0.5, title: 'Lead Call',            sub: 'Morning inquiry',      type: 'consult',  cadence: true  },
+  { day: 1, start: 9.5,  duration: 1,   title: 'Buyer Consult',        sub: 'Pre-approval review',  type: 'consult',  cadence: true  },
+  { day: 1, start: 11,   duration: 1,   title: 'Showing',              sub: 'West Side Duplex',     type: 'showing',  cadence: true  },
+  { day: 1, start: 13,   duration: 1,   title: 'Showing',              sub: '4bd Lake View',        type: 'showing',  cadence: true  },
+  { day: 1, start: 14.5, duration: 0.5, title: 'Lead Call',            sub: 'Facebook inquiry',     type: 'consult',  cadence: true  },
+  { day: 1, start: 15.5, duration: 0.5, title: 'Follow-up Call',       sub: 'Qualified lead',       type: 'consult',  cadence: true  },
+  // Wednesday
+  { day: 2, start: 8.5,  duration: 0.5, title: 'Lead Call',            sub: 'Realtor.com inquiry',  type: 'consult',  cadence: true  },
+  { day: 2, start: 9,    duration: 0.5, title: 'Lead Booked',          sub: 'Zillow inquiry',       type: 'consult',  cadence: true  },
+  { day: 2, start: 10.5, duration: 1,   title: 'Showing',              sub: 'Downtown Loft',        type: 'showing',  cadence: true  },
+  { day: 2, start: 12,   duration: 1,   title: 'Listing Consult',      sub: 'Plymouth, MN',         type: 'listing',  cadence: false },
+  { day: 2, start: 14,   duration: 1,   title: 'Team Meeting',         sub: 'Weekly sync',          type: 'internal', cadence: false },
+  { day: 2, start: 15.5, duration: 1,   title: 'Buyer Showing',        sub: 'New Construction',     type: 'showing',  cadence: true  },
+  // Thursday
+  { day: 3, start: 9,    duration: 1.5, title: 'Listing Presentation', sub: 'Edina, MN',            type: 'listing',  cadence: false },
+  { day: 3, start: 11,   duration: 1,   title: 'Buyer Consult',        sub: 'Investment buyer',     type: 'consult',  cadence: true  },
+  { day: 3, start: 12.5, duration: 0.5, title: 'Lead Call',            sub: 'Realtor.com',          type: 'consult',  cadence: true  },
+  { day: 3, start: 13.5, duration: 1,   title: 'Buyer Showing',        sub: '3bd Summit Ave',       type: 'showing',  cadence: true  },
+  { day: 3, start: 15,   duration: 0.5, title: 'Lead Call',            sub: 'Facebook inquiry',     type: 'consult',  cadence: true  },
+  { day: 3, start: 16,   duration: 0.5, title: 'Follow-up Call',       sub: 'Qualified — ready now',type: 'consult',  cadence: true  },
+  // Friday
+  { day: 4, start: 8.5,  duration: 0.5, title: 'Lead Call',            sub: 'Overnight inquiry',    type: 'consult',  cadence: true  },
+  { day: 4, start: 10,   duration: 1,   title: 'Buyer Consult',        sub: 'Relocation buyer',     type: 'consult',  cadence: true  },
+  { day: 4, start: 11.5, duration: 1,   title: 'Showing',              sub: 'Minnetonka Home',      type: 'showing',  cadence: true  },
+  { day: 4, start: 13,   duration: 0.5, title: 'Lead Call',            sub: 'Realtor.com',          type: 'consult',  cadence: true  },
+  { day: 4, start: 14,   duration: 1,   title: 'Buyer Consult',        sub: 'First-time buyer',     type: 'consult',  cadence: true  },
+  { day: 4, start: 15.5, duration: 1,   title: 'Showing',              sub: 'Wayzata Home',         type: 'showing',  cadence: true  },
 ]
 
 const typeStyles: Record<ApptType, { card: string; dot: string }> = {
@@ -88,7 +108,7 @@ export default function CalendarSection() {
             <div className="flex items-center gap-2">
               <div className="flex items-center gap-1.5 px-3 py-1.5 bg-stone-900 rounded-full">
                 <div className="w-1.5 h-1.5 rounded-full bg-cadence-gold" />
-                <span className="text-xs text-white font-medium">13 booked via Cadence</span>
+                <span className="text-xs text-white font-medium">23 booked via Cadence</span>
               </div>
               <span className="hidden sm:block text-xs text-stone-400 font-medium px-2.5 py-1.5 border border-stone-200 rounded-full">
                 Week view
@@ -194,7 +214,7 @@ export default function CalendarSection() {
         {/* Stats below calendar */}
         <div className="mt-6 grid grid-cols-1 sm:grid-cols-3 gap-4">
           {[
-            { value: '13', label: 'Appointments booked by Cadence this week', color: 'bg-cadence-gold' },
+            { value: '23', label: 'Appointments booked by Cadence this week', color: 'bg-cadence-gold' },
             { value: '2',  label: 'Booked manually by your team',             color: 'bg-stone-400'   },
             { value: '0',  label: 'Leads left without a callback',            color: 'bg-emerald-400' },
           ].map((stat, i) => (
