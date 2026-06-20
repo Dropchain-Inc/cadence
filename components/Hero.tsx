@@ -108,7 +108,7 @@ export default function Hero() {
       </div>
 
       {/* Main hero card */}
-      <div className="relative z-20 w-full max-w-5xl mx-auto px-4">
+      <div className="relative z-20 w-full max-w-6xl mx-auto px-4">
         <div
           className="bg-white overflow-hidden"
           style={{
@@ -150,7 +150,7 @@ export default function Hero() {
               </div>
 
               {/* Headline */}
-              <h1 className="font-display text-[2.6rem] lg:text-[3.2rem] leading-[1.05] font-medium text-stone-900 mb-5 text-balance">
+              <h1 className="font-display text-[2.8rem] lg:text-[3.6rem] leading-[1.05] font-semibold text-stone-900 mb-5 text-balance">
                 Call Every Real Estate Lead Back in Under 2 Minutes
               </h1>
 
