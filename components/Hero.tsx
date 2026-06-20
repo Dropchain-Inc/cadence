@@ -110,7 +110,7 @@ export default function Hero() {
       {/* Main hero card */}
       <div className="relative z-20 w-full max-w-5xl mx-auto px-4">
         <div
-          className="bg-white overflow-hidden -rotate-1"
+          className="bg-white overflow-hidden"
           style={{
             borderRadius: '2rem',
             boxShadow: 'var(--shadow-hero)',
