@@ -41,7 +41,7 @@ export default function StatsSection() {
         </div>
 
         <div className="mt-8 pt-8 border-t border-stone-800 flex flex-col sm:flex-row sm:items-center justify-between gap-4">
-          <p className="text-stone-500 text-sm leading-relaxed max-w-xl">
+          <p className="text-stone-400 text-sm leading-relaxed max-w-xl">
             48% no-response rate and 15.29-hour average response time from WAV Group Agent Responsiveness Study.
             MIT/InsideSales: 5-minute vs. 30-minute response = 100x higher contact odds, 21x higher qualification odds.
           </p>

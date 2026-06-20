@@ -121,26 +121,6 @@ export default function Hero() {
             {/* Left: Content */}
             <div className="p-10 lg:p-14 flex flex-col justify-center">
 
-              {/* Inner nav */}
-              <div className="flex items-center gap-3 mb-10 pb-6 border-b border-stone-100">
-                <div className="flex items-center gap-1.5">
-                  <div className="w-5 h-5 bg-stone-900 rounded-md flex items-center justify-center">
-                    <div className="w-2.5 h-2.5 border-[1.5px] border-stone-100 rounded-sm" />
-                  </div>
-                  <span className="text-sm font-semibold text-stone-900">Cadence</span>
-                </div>
-                <div className="flex items-center gap-4 ml-auto">
-                  <span className="text-xs text-stone-400 hidden sm:block">Product</span>
-                  <span className="text-xs text-stone-400 hidden sm:block">Pricing</span>
-                  <a
-                    href="#demo"
-                    className="text-xs bg-stone-900 text-white px-3 py-1.5 rounded-full hover:bg-stone-800 transition-colors"
-                  >
-                    Demo
-                  </a>
-                </div>
-              </div>
-
               {/* Flag */}
               <div className="inline-flex items-center gap-2 mb-5">
                 <div className="w-1.5 h-1.5 rounded-full bg-cadence-gold" />
@@ -179,23 +159,6 @@ export default function Hero() {
                 </a>
               </div>
 
-              {/* Trust proof */}
-              <div className="flex items-center gap-3">
-                <div className="flex -space-x-2">
-                  {avatars.map((a, i) => (
-                    <div
-                      key={i}
-                      className="w-8 h-8 rounded-full border-2 border-white flex items-center justify-center text-[10px] font-bold text-white shrink-0"
-                      style={{ backgroundColor: a.color }}
-                    >
-                      {a.initials}
-                    </div>
-                  ))}
-                </div>
-                <span className="text-sm text-stone-400 leading-relaxed max-w-[180px]">
-                  Built for agents, teams, and brokerages that depend on online leads.
-                </span>
-              </div>
             </div>
 
             {/* Right: Dark panel with home image */}
