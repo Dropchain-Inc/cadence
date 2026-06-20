@@ -6,10 +6,11 @@ export default function FinalCTA() {
           Get Started
         </div>
         <h2 className="font-display text-5xl lg:text-6xl font-medium text-stone-900 mb-6 text-balance leading-[1.05]">
-          Stop losing leads to slow follow-up.
+          Stop losing real estate leads to slow follow-up.
         </h2>
-        <p className="text-stone-500 text-lg mb-10 max-w-md mx-auto leading-relaxed">
-          Give every new lead a fast, professional first call without hiring another ISA.
+        <p className="text-stone-500 text-lg mb-10 max-w-lg mx-auto leading-relaxed">
+          Put real estate lead follow-up automation to work: a fast, professional first call on every
+          online lead, 24/7 — without hiring another ISA.
         </p>
 
         <div className="flex flex-col sm:flex-row items-center justify-center gap-3">

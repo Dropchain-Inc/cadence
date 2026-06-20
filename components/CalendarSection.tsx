@@ -75,11 +75,11 @@ export default function CalendarSection() {
     <section className="py-28 px-6 bg-stone-50">
       <div className="max-w-5xl mx-auto">
         <div className="mb-4 text-xs font-semibold text-stone-400 uppercase tracking-[0.12em]">
-          The Result
+          Booked Appointments & Lead Conversion
         </div>
         <div className="flex flex-col lg:flex-row lg:items-end justify-between gap-6 mb-12">
           <h2 className="font-display text-4xl lg:text-5xl font-medium text-stone-900 max-w-md text-balance leading-[1.1]">
-            A calendar that fills itself.
+            A real estate calendar that fills itself.
           </h2>
           <p className="text-stone-500 text-base lg:text-lg leading-relaxed lg:max-w-xs">
             Every qualified lead lands as a booked appointment — no chasing, no gaps.

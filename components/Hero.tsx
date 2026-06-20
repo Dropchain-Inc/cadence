@@ -125,19 +125,20 @@ export default function Hero() {
               <div className="inline-flex items-center gap-2 mb-5">
                 <div className="w-1.5 h-1.5 rounded-full bg-cadence-gold" />
                 <span className="text-[11px] font-semibold text-stone-400 uppercase tracking-[0.12em]">
-                  Built for Real Estate
+                  AI Real Estate Lead Response
                 </span>
               </div>
 
               {/* Headline */}
               <h1 className="font-display text-[2.8rem] lg:text-[3.6rem] leading-[1.05] font-semibold text-stone-900 mb-5 text-balance">
-                Call Every Real Estate Lead Back in Under 2 Minutes
+                Real Estate Lead Follow-Up, Automated in Under 2 Minutes
               </h1>
 
               {/* Subheadline */}
               <p className="text-stone-500 text-base lg:text-lg leading-relaxed mb-8 max-w-md">
-                Cadence uses your voice, your script, and your follow-up playbook to qualify
-                online leads and book appointments 24/7.
+                Cadence is the AI caller that responds to every online and Zillow lead in your voice
+                and your script — qualifying leads, booking appointments 24/7, and logging every call
+                to your CRM. Speed-to-lead, fully automated.
               </p>
 
               {/* CTAs */}
@@ -165,7 +166,7 @@ export default function Hero() {
             <div className="relative hidden lg:block min-h-[480px] bg-stone-950">
               <Image
                 src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&w=1200&q=80"
-                alt="Modern luxury home"
+                alt="Luxury real estate home represented by Cadence AI lead follow-up"
                 fill
                 className="object-cover opacity-40"
                 priority
@@ -214,8 +215,8 @@ export default function Hero() {
         <div className="mt-8 flex items-center justify-center gap-6 flex-wrap">
           {[
             { stat: '48%', label: 'of buyer inquiries never get a response (WAV Group)' },
-            { stat: '< 2 min', label: 'Cadence response time' },
-            { stat: '24/7', label: 'coverage, no gaps' },
+            { stat: '< 2 min', label: 'first response, every lead' },
+            { stat: '24/7', label: 'after-hours coverage, no gaps' },
           ].map((item, i) => (
             <div key={i} className="flex items-center gap-2">
               <span className="font-sans font-semibold text-stone-700 text-sm">{item.stat}</span>

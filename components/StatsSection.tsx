@@ -1,12 +1,12 @@
 const stats = [
   {
     value: '< 2 min',
-    label: 'Response time',
-    sub: 'Every lead. Every time.',
+    label: 'First response time',
+    sub: 'Speed-to-lead on every lead.',
   },
   {
     value: '24/7',
-    label: 'Coverage',
+    label: 'After-hours coverage',
     sub: 'No after-hours gap.',
   },
   {
@@ -17,7 +17,7 @@ const stats = [
   {
     value: '1.5×',
     label: 'Avg. callback attempts',
-    sub: 'Without a real system.',
+    sub: 'Without a follow-up system.',
   },
 ]
 

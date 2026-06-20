@@ -2,23 +2,23 @@ const problems = [
   {
     stat: '917 min',
     statLabel: 'Average real estate lead response time',
-    title: 'Slow Response',
+    title: 'Slow Lead Response',
     description:
-      'By the time your team calls, the lead has already spoken to someone else. 47% of buyers hire the first agent they speak with. Speed is not a best practice. It is where the deal is won or lost.',
+      'By the time your team calls, the lead has already spoken to someone else. 47% of buyers hire the first agent they speak with. In real estate, speed-to-lead is not a best practice — it is where the deal is won or lost.',
   },
   {
     stat: '48%',
     statLabel: 'Of buyer inquiries never receive a response',
-    title: 'Missed Calls',
+    title: 'Missed & After-Hours Calls',
     description:
-      'Showings, listing appointments, family time, sleep. The lead comes in at 9:30 p.m. and nobody calls until Monday. By then it is gone — to an agent who had a system that could answer.',
+      'Showings, listing appointments, family time, sleep. The online lead comes in at 9:30 p.m. and nobody calls until Monday. By then it is gone — to an agent whose after-hours lead response actually answered.',
   },
   {
     stat: '1.5×',
     statLabel: 'Average callback attempts before giving up',
     title: 'Inconsistent Follow-Up',
     description:
-      'One call. Maybe two. Then the lead gets written off as junk. The real problem was not lead quality. It was the system that stopped trying after one attempt and no answer.',
+      'One call. Maybe two. Then the lead gets written off as junk. The real problem was not lead quality — it was a follow-up cadence that stopped after one callback attempt and no answer.',
   },
 ]
 
@@ -29,8 +29,8 @@ export default function ProblemSection() {
         <div className="mb-4 text-xs font-semibold text-stone-400 uppercase tracking-[0.12em]">
           The Problem
         </div>
-        <h2 className="font-display text-4xl lg:text-5xl font-medium text-stone-900 mb-16 max-w-lg text-balance leading-[1.1]">
-          Online leads go cold fast.
+        <h2 className="font-display text-4xl lg:text-5xl font-medium text-stone-900 mb-16 max-w-xl text-balance leading-[1.1]">
+          Online real estate leads go cold fast.
         </h2>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-5">

@@ -1,8 +1,8 @@
 const features = [
   {
-    title: 'Uses your voice',
+    title: 'AI caller in your voice',
     description:
-      'Trained on your best calls. Sounds like your team on their best day — not a generic AI assistant.',
+      'Trained on your best calls. The AI real estate caller sounds like your team on their best day — not a generic AI assistant.',
   },
   {
     title: 'Follows your script',
@@ -10,24 +10,24 @@ const features = [
       'Your qualifying questions, your objection responses, your close language. No script drift, no off-brand calls.',
   },
   {
-    title: 'Qualifies leads',
+    title: 'Lead qualification, automated',
     description:
-      'Surfaces the hot ones. Your best people stop burning time on manual cold-lead grind and focus on real conversations.',
+      'Surfaces the hot leads. Your best agents stop burning time on the manual cold-lead grind and focus on real conversations.',
   },
   {
-    title: 'Books appointments',
+    title: 'Appointment setting',
     description:
-      'Qualified leads get a booked appointment on your calendar. Automated reminders reduce no-show rates.',
+      'Qualified leads get a booked appointment on your calendar. Automated reminders cut no-show rates.',
   },
   {
-    title: 'Sends call summaries',
+    title: 'CRM logging & sync',
     description:
-      'Every call logged with a transcript, outcome, status, and source — automatically written to your CRM.',
+      'Every call logged with a transcript, outcome, status, and lead source — automatically written to your CRM.',
   },
   {
-    title: 'Works after hours',
+    title: 'After-hours coverage',
     description:
-      'No weekend gap. No 10:30 p.m. lead sitting until Monday. Every inquiry handled, regardless of the clock.',
+      'No weekend gap. No 10:30 p.m. lead sitting until Monday. Every online inquiry handled 24/7, regardless of the clock.',
   },
 ]
 
@@ -53,10 +53,10 @@ export default function FeaturesSection() {
     <section className="py-28 px-6 bg-white">
       <div className="max-w-5xl mx-auto">
         <div className="mb-4 text-[11px] font-semibold text-stone-400 uppercase tracking-[0.12em]">
-          Built to Cover the Gap
+          Real Estate Lead Conversion Software
         </div>
-        <h2 className="font-display text-4xl lg:text-5xl font-medium text-stone-900 mb-16 max-w-lg text-balance leading-[1.1]">
-          Everything between click and calendar.
+        <h2 className="font-display text-4xl lg:text-5xl font-medium text-stone-900 mb-16 max-w-xl text-balance leading-[1.1]">
+          Everything between the online lead and the booked appointment.
         </h2>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
