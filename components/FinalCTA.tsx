@@ -43,8 +43,8 @@ export default function FinalCTA() {
                 </svg>
               </div>
               <div>
-                <div className="text-sm font-semibold text-stone-900 mb-0.5">{item.label}</div>
-                <div className="text-xs text-stone-500">{item.sub}</div>
+                <div className="text-base font-semibold text-stone-900 mb-0.5">{item.label}</div>
+                <div className="text-sm text-stone-500">{item.sub}</div>
               </div>
             </div>
           ))}

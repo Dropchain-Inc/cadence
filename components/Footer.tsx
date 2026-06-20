@@ -13,14 +13,14 @@ export default function Footer() {
               </div>
               <span className="font-sans font-semibold text-stone-100 tracking-tight text-[15px]">Cadence</span>
             </div>
-            <p className="text-stone-500 text-xs leading-relaxed max-w-xs">
+            <p className="text-stone-500 text-sm leading-relaxed max-w-xs">
               Every lead called. Every outcome logged. Every appointment tracked.
             </p>
           </div>
 
           <div className="flex flex-wrap gap-x-7 gap-y-3">
             {navLinks.map((item) => (
-              <a key={item} href="#" className="text-xs text-stone-500 hover:text-stone-300 transition-colors">
+              <a key={item} href="#" className="text-sm text-stone-500 hover:text-stone-300 transition-colors">
                 {item}
               </a>
             ))}

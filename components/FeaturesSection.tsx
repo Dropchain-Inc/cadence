@@ -68,10 +68,10 @@ export default function FeaturesSection() {
               <div className="w-9 h-9 rounded-xl bg-stone-200 group-hover:bg-stone-700 transition-colors mb-5 flex items-center justify-center text-stone-500 group-hover:text-stone-300">
                 <FeatureIcon index={i} />
               </div>
-              <h3 className="font-sans font-semibold text-stone-900 group-hover:text-white transition-colors mb-2 text-[15px]">
+              <h3 className="font-sans font-semibold text-stone-900 group-hover:text-white transition-colors mb-2 text-base">
                 {feature.title}
               </h3>
-              <p className="text-stone-500 group-hover:text-stone-400 transition-colors text-sm leading-relaxed">
+              <p className="text-stone-500 group-hover:text-stone-400 transition-colors text-base leading-relaxed">
                 {feature.description}
               </p>
             </div>

@@ -192,7 +192,7 @@ export default function Hero() {
                     </div>
                   ))}
                 </div>
-                <span className="text-xs text-stone-400 leading-relaxed max-w-[180px]">
+                <span className="text-sm text-stone-400 leading-relaxed max-w-[180px]">
                   Built for agents, teams, and brokerages that depend on online leads.
                 </span>
               </div>
@@ -256,7 +256,7 @@ export default function Hero() {
           ].map((item, i) => (
             <div key={i} className="flex items-center gap-2">
               <span className="font-sans font-semibold text-stone-700 text-sm">{item.stat}</span>
-              <span className="text-stone-400 text-xs">{item.label}</span>
+              <span className="text-stone-400 text-sm">{item.label}</span>
               {i < 2 && <span className="text-stone-300 text-sm ml-4">·</span>}
             </div>
           ))}

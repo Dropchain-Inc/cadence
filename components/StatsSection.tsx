@@ -34,20 +34,20 @@ export default function StatsSection() {
               <div className="font-display text-4xl lg:text-5xl font-light text-white mb-2 tracking-tight">
                 {stat.value}
               </div>
-              <div className="text-stone-300 text-sm font-medium mb-1">{stat.label}</div>
-              <div className="text-stone-500 text-xs leading-relaxed">{stat.sub}</div>
+              <div className="text-stone-300 text-base font-medium mb-1">{stat.label}</div>
+              <div className="text-stone-500 text-sm leading-relaxed">{stat.sub}</div>
             </div>
           ))}
         </div>
 
         <div className="mt-8 pt-8 border-t border-stone-800 flex flex-col sm:flex-row sm:items-center justify-between gap-4">
-          <p className="text-stone-500 text-xs leading-relaxed max-w-xl">
+          <p className="text-stone-500 text-sm leading-relaxed max-w-xl">
             48% no-response rate and 15.29-hour average response time from WAV Group Agent Responsiveness Study.
             MIT/InsideSales: 5-minute vs. 30-minute response = 100x higher contact odds, 21x higher qualification odds.
           </p>
           <a
             href="#demo"
-            className="shrink-0 inline-flex items-center px-5 py-2.5 border border-stone-700 text-stone-300 text-sm font-medium rounded-full hover:bg-stone-800 hover:text-white transition-colors"
+            className="shrink-0 inline-flex items-center px-5 py-2.5 border border-stone-700 text-stone-300 text-base font-medium rounded-full hover:bg-stone-800 hover:text-white transition-colors"
           >
             Book a Demo
           </a>
