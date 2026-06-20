@@ -1,0 +1,57 @@
+'use client'
+
+import { useState, useEffect } from 'react'
+
+export default function Header() {
+  const [scrolled, setScrolled] = useState(false)
+
+  useEffect(() => {
+    const onScroll = () => setScrolled(window.scrollY > 24)
+    window.addEventListener('scroll', onScroll, { passive: true })
+    return () => window.removeEventListener('scroll', onScroll)
+  }, [])
+
+  return (
+    <header
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
+        scrolled
+          ? 'bg-white/95 backdrop-blur-md border-b border-stone-200/70 shadow-[0_1px_12px_rgba(0,0,0,0.06)]'
+          : 'bg-transparent'
+      }`}
+    >
+      <div className="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
+        <div className="flex items-center gap-2.5">
+          <div className="w-7 h-7 bg-stone-900 rounded-lg flex items-center justify-center">
+            <div className="w-3 h-3 border-2 border-stone-100 rounded-sm" />
+          </div>
+          <span className="font-sans font-semibold text-stone-900 tracking-tight text-[15px]">Cadence</span>
+        </div>
+
+        <nav className="hidden md:flex items-center gap-7">
+          {['Product', 'How It Works', 'Results', 'Pricing', 'FAQ'].map((item) => (
+            <a
+              key={item}
+              href={`#${item.toLowerCase().replace(/\s+/g, '-')}`}
+              className="text-sm text-stone-500 hover:text-stone-900 transition-colors"
+            >
+              {item}
+            </a>
+          ))}
+        </nav>
+
+        <a
+          href="#demo"
+          className="hidden md:inline-flex items-center px-5 py-2.5 bg-stone-900 text-stone-50 text-sm font-medium rounded-full hover:bg-stone-800 transition-colors"
+        >
+          Get a Demo
+        </a>
+
+        <button className="md:hidden p-2 text-stone-600" aria-label="Open menu">
+          <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M4 6h16M4 12h16M4 18h16" />
+          </svg>
+        </button>
+      </div>
+    </header>
+  )
+}

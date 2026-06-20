@@ -1,26 +1,53 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #FAFAFA;
+  --foreground: #0D0D0D;
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --font-sans: var(--font-inter), system-ui, sans-serif;
+  --font-display: var(--font-cormorant), Georgia, serif;
+
+  --color-cadence-gold: #B8973E;
+  --color-cadence-gold-light: #F5EDD4;
+
+  --shadow-card: 0 0 0 1px rgba(0,0,0,0.05), 0 2px 8px -2px rgba(0,0,0,0.06), 0 8px 24px -8px rgba(0,0,0,0.08);
+  --shadow-hero: 0 0 0 1px rgba(0,0,0,0.04), 0 8px 32px -8px rgba(0,0,0,0.10), 0 32px 80px -16px rgba(0,0,0,0.14);
+  --shadow-float: 0 4px 24px -4px rgba(0,0,0,0.14), 0 0 0 1px rgba(0,0,0,0.04);
+
+  --animate-float: float 8s ease-in-out infinite;
+  --animate-float-slow: float 10s ease-in-out infinite;
+  --animate-float-delayed: float 9s ease-in-out 3s infinite;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-10px); }
+}
+
+@layer utilities {
+  .blueprint-grid {
+    background-image:
+      linear-gradient(rgba(148, 163, 184, 0.11) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(148, 163, 184, 0.11) 1px, transparent 1px);
+    background-size: 52px 52px;
   }
+
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
