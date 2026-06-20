@@ -1,3 +1,5 @@
+import Logo from './Logo'
+
 const navLinks = ['Product', 'How It Works', 'Pricing', 'Blog', 'Partners', 'Integrations']
 const legalLinks = ['Privacy Policy', 'Terms of Service']
 
@@ -7,12 +9,9 @@ export default function Footer() {
       <div className="max-w-5xl mx-auto px-6 py-12">
         <div className="flex flex-col md:flex-row items-start md:items-center justify-between gap-8 mb-10">
           <div>
-            <div className="flex items-center gap-2.5 mb-3">
-              <div className="w-7 h-7 bg-stone-700 rounded-lg flex items-center justify-center">
-                <div className="w-3 h-3 border-2 border-stone-400 rounded-sm" />
-              </div>
-              <span className="font-sans font-semibold text-stone-100 tracking-tight text-[15px]">Cadence</span>
-            </div>
+            <a href="/" aria-label="Cadence home" className="inline-flex mb-3 transition-opacity hover:opacity-70">
+              <Logo variant="light" />
+            </a>
             <p className="text-stone-500 text-sm leading-relaxed max-w-xs">
               Every lead called. Every outcome logged. Every appointment tracked.
             </p>

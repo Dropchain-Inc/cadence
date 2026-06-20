@@ -1,6 +1,7 @@
 'use client'
 
 import { useState, useEffect } from 'react'
+import Logo from './Logo'
 
 export default function Header() {
   const [scrolled, setScrolled] = useState(false)
@@ -20,12 +21,9 @@ export default function Header() {
       }`}
     >
       <div className="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
-        <div className="flex items-center gap-2.5">
-          <div className="w-7 h-7 bg-stone-900 rounded-lg flex items-center justify-center">
-            <div className="w-3 h-3 border-2 border-stone-100 rounded-sm" />
-          </div>
-          <span className="font-sans font-semibold text-stone-900 tracking-tight text-[15px]">Cadence</span>
-        </div>
+        <a href="/" aria-label="Cadence home" className="transition-opacity hover:opacity-70">
+          <Logo variant="dark" />
+        </a>
 
         <nav className="hidden md:flex items-center gap-7">
           {['Product', 'How It Works', 'Results', 'Pricing', 'FAQ'].map((item) => (
