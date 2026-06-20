@@ -20,7 +20,7 @@ export default function FinalCTA() {
             Book a Demo
           </a>
           <a
-            href="#"
+            href="/calculator"
             className="inline-flex items-center gap-2 px-8 py-4 text-stone-600 font-medium rounded-full border border-stone-200 hover:bg-stone-100 transition-colors text-[15px]"
           >
             Calculate Your Follow-Up Leak

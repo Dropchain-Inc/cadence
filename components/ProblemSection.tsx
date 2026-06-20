@@ -26,7 +26,7 @@ export default function ProblemSection() {
   return (
     <section className="py-28 px-6 bg-white" id="how-it-works">
       <div className="max-w-5xl mx-auto">
-        <div className="mb-4 text-[11px] font-semibold text-stone-400 uppercase tracking-[0.12em]">
+        <div className="mb-4 text-xs font-semibold text-stone-400 uppercase tracking-[0.12em]">
           The Problem
         </div>
         <h2 className="font-display text-4xl lg:text-5xl font-medium text-stone-900 mb-16 max-w-lg text-balance leading-[1.1]">
@@ -42,21 +42,21 @@ export default function ProblemSection() {
               <div className="font-display text-4xl font-light text-stone-900 mb-1 tracking-tight">
                 {p.stat}
               </div>
-              <div className="text-[11px] text-stone-400 mb-7 leading-relaxed">{p.statLabel}</div>
+              <div className="text-sm text-stone-400 mb-7 leading-relaxed">{p.statLabel}</div>
               <div className="h-px bg-stone-200 mb-7" />
-              <h3 className="font-sans font-semibold text-stone-900 mb-3 text-[15px]">{p.title}</h3>
-              <p className="text-stone-500 text-sm leading-relaxed">{p.description}</p>
+              <h3 className="font-sans font-semibold text-stone-900 mb-3 text-base">{p.title}</h3>
+              <p className="text-stone-500 text-base leading-relaxed">{p.description}</p>
             </div>
           ))}
         </div>
 
         <div className="mt-10 rounded-2xl bg-stone-900 px-8 py-6 flex flex-col sm:flex-row sm:items-center gap-4">
-          <p className="text-stone-300 text-sm leading-relaxed flex-1">
+          <p className="text-stone-300 text-base leading-relaxed flex-1">
             Source: WAV Group Agent Responsiveness Study. Research proves the size of the problem. Cadence performance data will be added as customers report results.
           </p>
           <a
-            href="#demo"
-            className="shrink-0 inline-flex items-center px-5 py-2.5 bg-white text-stone-900 text-sm font-medium rounded-full hover:bg-stone-100 transition-colors"
+            href="/calculator"
+            className="shrink-0 inline-flex items-center px-5 py-2.5 bg-white text-stone-900 text-base font-medium rounded-full hover:bg-stone-100 transition-colors"
           >
             Calculate Your Leak
           </a>
