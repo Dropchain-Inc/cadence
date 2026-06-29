@@ -67,6 +67,19 @@ export default function SolutionSection() {
             </div>
           ))}
         </div>
+
+        <div className="mt-10 flex flex-col sm:flex-row items-start sm:items-center gap-4">
+          <a
+            href="#demo"
+            className="inline-flex items-center gap-2 px-6 py-3 bg-stone-900 text-white text-sm font-semibold rounded-full hover:bg-stone-800 transition-colors"
+          >
+            See It in Action — Free 20-Min Demo
+            <svg className="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+            </svg>
+          </a>
+          <span className="text-stone-400 text-sm">No contract to start · Setup in 48 hours</span>
+        </div>
       </div>
     </section>
   )

@@ -77,6 +77,28 @@ export default function FAQSection() {
             </details>
           ))}
         </div>
+
+        <div className="mt-12 rounded-3xl bg-stone-900 px-8 py-10 text-center">
+          <div className="text-xs font-semibold text-stone-500 uppercase tracking-[0.12em] mb-3">
+            Still have questions?
+          </div>
+          <h3 className="font-display text-2xl lg:text-3xl font-medium text-white mb-2 text-balance">
+            See Cadence answer a real lead — live.
+          </h3>
+          <p className="text-stone-400 text-sm mb-6">
+            We walk you through the full flow: lead comes in, Cadence calls, appointment booked.
+          </p>
+          <a
+            href="#demo"
+            className="inline-flex items-center gap-2 px-7 py-3.5 bg-white text-stone-900 text-sm font-semibold rounded-full hover:bg-stone-100 transition-colors"
+          >
+            Book a Free 20-Min Demo
+            <svg className="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+            </svg>
+          </a>
+          <div className="mt-4 text-xs text-stone-600">No contract to start · 30-minute call</div>
+        </div>
       </div>
     </section>
   )

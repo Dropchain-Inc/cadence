@@ -2,8 +2,9 @@ export default function FinalCTA() {
   return (
     <section className="py-32 px-6 bg-stone-50 blueprint-grid" id="demo">
       <div className="max-w-3xl mx-auto text-center">
-        <div className="mb-5 text-[11px] font-semibold text-stone-400 uppercase tracking-[0.12em]">
-          Get Started
+        <div className="inline-flex items-center gap-2 mb-5 px-4 py-1.5 bg-amber-50 border border-amber-200 rounded-full">
+          <div className="w-1.5 h-1.5 rounded-full bg-amber-400" />
+          <span className="text-xs font-semibold text-amber-700">Limited onboarding spots available each month</span>
         </div>
         <h2 className="font-display text-5xl lg:text-6xl font-medium text-stone-900 mb-6 text-balance leading-[1.05]">
           Stop losing real estate leads to slow follow-up.
@@ -16,9 +17,12 @@ export default function FinalCTA() {
         <div className="flex flex-col sm:flex-row items-center justify-center gap-3">
           <a
             href="#"
-            className="inline-flex items-center px-8 py-4 bg-stone-900 text-white font-medium rounded-full hover:bg-stone-800 transition-colors text-[15px]"
+            className="inline-flex items-center gap-2 px-8 py-4 bg-stone-900 text-white font-semibold rounded-full hover:bg-stone-800 transition-colors text-[15px]"
           >
-            Book a Demo
+            Book a Free 20-Min Demo
+            <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9 5l7 7-7 7" />
+            </svg>
           </a>
           <a
             href="/calculator"
@@ -29,6 +33,14 @@ export default function FinalCTA() {
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9 5l7 7-7 7" />
             </svg>
           </a>
+        </div>
+
+        <div className="mt-5 flex items-center justify-center gap-3 text-xs text-stone-400 flex-wrap">
+          <span>30-minute call</span>
+          <span>·</span>
+          <span>No long-term contract to start</span>
+          <span>·</span>
+          <span>Setup in 48 hours</span>
         </div>
 
         <div className="mt-14 pt-14 border-t border-stone-200 grid grid-cols-1 sm:grid-cols-3 gap-6 text-left">

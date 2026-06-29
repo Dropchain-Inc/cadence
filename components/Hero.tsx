@@ -142,22 +142,30 @@ export default function Hero() {
               </p>
 
               {/* CTAs */}
-              <div className="flex items-center gap-3 mb-8 flex-wrap">
-                <a
-                  href="#demo"
-                  className="inline-flex items-center px-6 py-3 bg-stone-900 text-white text-sm font-medium rounded-full hover:bg-stone-800 transition-colors"
-                >
-                  Book a Demo
-                </a>
-                <a
-                  href="#product"
-                  className="inline-flex items-center gap-2 px-6 py-3 text-stone-600 text-sm font-medium rounded-full border border-stone-200 hover:bg-stone-50 transition-colors"
-                >
-                  See How It Works
-                  <svg className="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-                  </svg>
-                </a>
+              <div className="flex flex-col gap-3 mb-8">
+                <div className="flex items-center gap-3 flex-wrap">
+                  <a
+                    href="#demo"
+                    className="inline-flex items-center gap-2 px-7 py-3.5 bg-stone-900 text-white text-sm font-semibold rounded-full hover:bg-stone-800 transition-colors"
+                  >
+                    Book a Free 20-Min Demo
+                    <svg className="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                    </svg>
+                  </a>
+                  <a
+                    href="#product"
+                    className="inline-flex items-center gap-2 px-6 py-3 text-stone-600 text-sm font-medium rounded-full border border-stone-200 hover:bg-stone-50 transition-colors"
+                  >
+                    See How It Works
+                    <svg className="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                    </svg>
+                  </a>
+                </div>
+                <div className="text-xs text-stone-400">
+                  No contract to start · Setup in 48 hours · Cancel anytime
+                </div>
               </div>
 
             </div>
