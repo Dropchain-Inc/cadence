@@ -13,16 +13,11 @@ const SLOT_DURATION_MS = 20 * 60 * 1000   // 20-minute meetings
 const SLOT_INTERVAL_MS = 30 * 60 * 1000   // slots offered every 30 min
 
 function getAuth() {
-  const privateKey = (process.env.GOOGLE_PRIVATE_KEY ?? '')
-    .replace(/\\n/g, '\n')   // literal \n → real newline
-    .replace(/^["']|["']$/g, '') // strip accidental surrounding quotes
-    .trim()
-
+  const b64 = process.env.GOOGLE_SERVICE_ACCOUNT_JSON_B64
+  if (!b64) throw new Error('GOOGLE_SERVICE_ACCOUNT_JSON_B64 is not set')
+  const credentials = JSON.parse(Buffer.from(b64, 'base64').toString('utf-8'))
   return new google.auth.GoogleAuth({
-    credentials: {
-      client_email: process.env.GOOGLE_SERVICE_ACCOUNT_EMAIL,
-      private_key: privateKey,
-    },
+    credentials,
     scopes: ['https://www.googleapis.com/auth/calendar'],
   })
 }
