@@ -100,6 +100,8 @@ export async function createBooking(
       start: { dateTime: start.toISOString(), timeZone: 'America/Chicago' },
       end: { dateTime: end.toISOString(), timeZone: 'America/Chicago' },
       description: [
+        `Join Google Meet: https://meet.google.com/acr-aanx-zwc`,
+        ``,
         `Booked by: ${name} <${email}>`,
         notes ? `Notes: ${notes}` : '',
       ].filter(Boolean).join('\n'),
