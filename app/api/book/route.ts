@@ -28,7 +28,8 @@ export async function POST(request: NextRequest) {
     const booking = await createBooking(slot, name.trim(), email.trim(), notes?.trim())
     return NextResponse.json({ success: true, ...booking })
   } catch (err) {
-    console.error('[book]', err)
-    return NextResponse.json({ error: 'Booking failed — please try another time' }, { status: 500 })
+    const msg = err instanceof Error ? err.message : String(err)
+    console.error('[book]', msg)
+    return NextResponse.json({ error: msg }, { status: 500 })
   }
 }
