@@ -1,10 +1,11 @@
 import { google } from 'googleapis'
 
+// Partner calendar is optional — omitted until configured
 const CALENDAR_IDS = [
-  process.env.GOOGLE_CALENDAR_PERSONAL!,
-  process.env.GOOGLE_CALENDAR_LEAN_MARKETING!,
-  process.env.GOOGLE_CALENDAR_PARTNER!,
-]
+  process.env.GOOGLE_CALENDAR_PERSONAL,
+  process.env.GOOGLE_CALENDAR_LEAN_MARKETING,
+  process.env.GOOGLE_CALENDAR_PARTNER,
+].filter(Boolean) as string[]
 
 const BOOKING_CALENDAR_ID = process.env.GOOGLE_CALENDAR_BOOKING!
 
