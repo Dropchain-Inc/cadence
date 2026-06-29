@@ -75,9 +75,14 @@ export default function BookingWidget() {
     setSlotsError(false)
     setSlots([])
     fetch(`/api/availability?date=${selectedDate}`)
-      .then((r) => r.json())
-      .then((data) => {
-        setSlots(data.slots ?? [])
+      .then((r) => r.json().then((data) => ({ ok: r.ok, data })))
+      .then(({ ok, data }) => {
+        if (!ok || data.error) {
+          console.error('[availability]', data.error)
+          setSlotsError(true)
+        } else {
+          setSlots(data.slots ?? [])
+        }
         setSlotsLoading(false)
       })
       .catch(() => {
