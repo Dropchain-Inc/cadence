@@ -58,7 +58,13 @@ export async function getAvailableSlots(dateStr: string): Promise<string[]> {
   const busyPeriods: { start: Date; end: Date }[] = []
   const cals = data.calendars ?? {}
   for (const id of CALENDAR_IDS) {
-    for (const b of cals[id]?.busy ?? []) {
+    const cal = cals[id]
+    if (cal?.errors?.length) {
+      // Can't read this calendar — block the entire day to prevent overbooking
+      console.error(`[freebusy] Error on calendar ${id}:`, cal.errors)
+      return []
+    }
+    for (const b of cal?.busy ?? []) {
       if (b.start && b.end) {
         busyPeriods.push({ start: new Date(b.start), end: new Date(b.end) })
       }
