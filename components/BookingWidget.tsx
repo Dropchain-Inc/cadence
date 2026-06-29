@@ -57,7 +57,7 @@ function formatFullDate(iso: string): string {
 
 export default function BookingWidget() {
   const [step, setStep] = useState<Step>('date')
-  const [days] = useState(() => upcomingWeekdays(14))
+  const [days] = useState(() => upcomingWeekdays(28))
   const [selectedDate, setSelectedDate] = useState<string | null>(null)
   const [slots, setSlots] = useState<string[]>([])
   const [slotsLoading, setSlotsLoading] = useState(false)
