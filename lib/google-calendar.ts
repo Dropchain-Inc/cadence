@@ -22,15 +22,16 @@ function getAuth() {
 
 // Returns the UTC offset string for America/Chicago on a given date ("-05:00" or "-06:00")
 function chicagoOffset(dateStr: string): string {
-  // Sample noon UTC on that date and ask Chicago what hour it is
-  const ref = new Date(`${dateStr}T18:00:00Z`)
-  const ctHour = new Intl.DateTimeFormat('en-US', {
-    timeZone: 'America/Chicago',
-    hour: 'numeric',
-    hour12: false,
-  }).format(ref)
-  // 18:00 UTC = 13:00 CST (UTC-6) or 14:00 CDT (UTC-5) — if CT says ≥14 we're in CDT
-  return parseInt(ctHour) >= 14 ? '-05:00' : '-06:00'
+  // 15:00 UTC = 10:00 CDT (UTC-5) or 09:00 CST (UTC-6)
+  const ref = new Date(`${dateStr}T15:00:00Z`)
+  const ctHour = parseInt(
+    new Intl.DateTimeFormat('en-US', {
+      timeZone: 'America/Chicago',
+      hour: 'numeric',
+      hour12: false,
+    }).format(ref)
+  )
+  return ctHour >= 10 ? '-05:00' : '-06:00'
 }
 
 export async function getAvailableSlots(dateStr: string): Promise<string[]> {
