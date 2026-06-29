@@ -95,18 +95,14 @@ export async function createBooking(
 
   const { data } = await calendar.events.insert({
     calendarId: BOOKING_CALENDAR_ID,
-    sendUpdates: 'all',
     requestBody: {
       summary: `Cadence Demo — ${name}`,
-      description: [
-        `Booked via cadenceleads.com`,
-        notes ? `\nNotes: ${notes}` : '',
-      ]
-        .filter(Boolean)
-        .join(''),
       start: { dateTime: start.toISOString(), timeZone: 'America/Chicago' },
       end: { dateTime: end.toISOString(), timeZone: 'America/Chicago' },
-      attendees: [{ email, displayName: name }],
+      description: [
+        `Booked by: ${name} <${email}>`,
+        notes ? `Notes: ${notes}` : '',
+      ].filter(Boolean).join('\n'),
     },
   })
 
