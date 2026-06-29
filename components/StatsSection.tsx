@@ -46,7 +46,7 @@ export default function StatsSection() {
             MIT/InsideSales: 5-minute vs. 30-minute response = 100x higher contact odds, 21x higher qualification odds.
           </p>
           <a
-            href="#demo"
+            href="/demo"
             className="shrink-0 inline-flex items-center px-5 py-2.5 border border-stone-700 text-stone-300 text-base font-medium rounded-full hover:bg-stone-800 hover:text-white transition-colors"
           >
             Book a Demo

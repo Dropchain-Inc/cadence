@@ -70,7 +70,7 @@ export default function SolutionSection() {
 
         <div className="mt-10 flex flex-col sm:flex-row items-start sm:items-center gap-4">
           <a
-            href="#demo"
+            href="/demo"
             className="inline-flex items-center gap-2 px-6 py-3 bg-stone-900 text-white text-sm font-semibold rounded-full hover:bg-stone-800 transition-colors"
           >
             See It in Action — Free 20-Min Demo

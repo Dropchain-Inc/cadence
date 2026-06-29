@@ -145,7 +145,7 @@ export default function Hero() {
               <div className="flex flex-col gap-3 mb-8">
                 <div className="flex items-center gap-3 flex-wrap">
                   <a
-                    href="#demo"
+                    href="/demo"
                     className="inline-flex items-center gap-2 px-7 py-3.5 bg-stone-900 text-white text-sm font-semibold rounded-full hover:bg-stone-800 transition-colors"
                   >
                     Book a Free 20-Min Demo

@@ -38,7 +38,7 @@ export default function Header() {
         </nav>
 
         <a
-          href="#demo"
+          href="/demo"
           className="hidden md:inline-flex items-center px-5 py-2.5 bg-stone-900 text-stone-50 text-sm font-semibold rounded-full hover:bg-stone-800 transition-colors"
         >
           Book a Free Demo
@@ -46,7 +46,7 @@ export default function Header() {
 
         <div className="md:hidden flex items-center gap-2">
           <a
-            href="#demo"
+            href="/demo"
             className="inline-flex items-center px-4 py-2 bg-stone-900 text-stone-50 text-xs font-semibold rounded-full hover:bg-stone-800 transition-colors"
           >
             Book Demo

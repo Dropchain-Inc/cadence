@@ -89,7 +89,7 @@ export default function FAQSection() {
             We walk you through the full flow: lead comes in, Cadence calls, appointment booked.
           </p>
           <a
-            href="#demo"
+            href="/demo"
             className="inline-flex items-center gap-2 px-7 py-3.5 bg-white text-stone-900 text-sm font-semibold rounded-full hover:bg-stone-100 transition-colors"
           >
             Book a Free 20-Min Demo
