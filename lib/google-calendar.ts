@@ -13,9 +13,16 @@ const SLOT_DURATION_MS = 20 * 60 * 1000   // 20-minute meetings
 const SLOT_INTERVAL_MS = 30 * 60 * 1000   // slots offered every 30 min
 
 function getAuth() {
-  return new google.auth.JWT({
-    email: process.env.GOOGLE_SERVICE_ACCOUNT_EMAIL,
-    key: process.env.GOOGLE_PRIVATE_KEY?.replace(/\\n/g, '\n'),
+  const privateKey = (process.env.GOOGLE_PRIVATE_KEY ?? '')
+    .replace(/\\n/g, '\n')   // literal \n → real newline
+    .replace(/^["']|["']$/g, '') // strip accidental surrounding quotes
+    .trim()
+
+  return new google.auth.GoogleAuth({
+    credentials: {
+      client_email: process.env.GOOGLE_SERVICE_ACCOUNT_EMAIL,
+      private_key: privateKey,
+    },
     scopes: ['https://www.googleapis.com/auth/calendar'],
   })
 }
@@ -35,8 +42,8 @@ function chicagoOffset(dateStr: string): string {
 }
 
 export async function getAvailableSlots(dateStr: string): Promise<string[]> {
-  const auth = getAuth()
-  const calendar = google.calendar({ version: 'v3', auth })
+  const auth = await getAuth().getClient()
+  const calendar = google.calendar({ version: 'v3', auth: auth as never })
   const offset = chicagoOffset(dateStr)
 
   const timeMin = `${dateStr}T09:00:00${offset}`
@@ -83,8 +90,8 @@ export async function createBooking(
   email: string,
   notes?: string
 ) {
-  const auth = getAuth()
-  const calendar = google.calendar({ version: 'v3', auth })
+  const auth = await getAuth().getClient()
+  const calendar = google.calendar({ version: 'v3', auth: auth as never })
 
   const start = new Date(slot)
   const end = new Date(start.getTime() + SLOT_DURATION_MS)
